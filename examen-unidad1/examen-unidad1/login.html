@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillMatch - Iniciar Sesion</title>
+</head>
+<body>
+
+    <header>
+        <a href="index.html">SkillMatch</a>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="registro.html">Registrarse</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Inicia sesión en tu cuenta</h2>
+
+            <form action="index.html" method="get">
+
+                <label for="email">Correo electrónico</label>
+                <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+
+                <br>
+
+                <label for="password">Contrasena</label>
+                <input type="password" id="password" name="password" placeholder="Ingresa tu contrasena" required minlength="8" maxlength="16">
+
+                <br>
+
+                <label for="rol">Rol en la plataforma</label>
+                <select id="rol" name="rol" required>
+                    <option value="">-- Selecciona tu rol --</option>
+                    <option value="estudiante">Estudiante</option>
+                    <option value="instructor">Instructor</option>
+                    <option value="empresa">Empresa / Reclutador</option>
+                </select>
+
+                <br><br>
+
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+
+            <p>No tienes cuenta? <a href="registro.html">Registrate aquí</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SkillMatch - Cerrando la brecha entre educacion y empleo</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillMatch - Registro</title>
+</head>
+<body>
+
+    <header>
+        <a href="index.html">SkillMatch</a>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="login.html">Iniciar Sesion</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Crear nueva cuenta</h2>
+
+            <form action="login.html" method="get">
+
+                <fieldset>
+                    <legend>Datos de acceso</legend>
+
+                    <label for="nombre">Nombre completo</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Ana Garcia" required>
+
+                    <br>
+
+                    <label for="email">Correo electronico</label>
+                    <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
+
+                    <br>
+
+                    <label for="password">Contrasena</label>
+                    <input type="password" id="password" name="password" placeholder="Minimo 8 caracteres" required minlength="8" maxlength="16">
+
+                    <br>
+
+                    <label for="ubicacion">Ubicacion</label>
+                    <input type="text" id="ubicacion" name="ubicacion" placeholder="Ej: Quito, Ecuador">
+                </fieldset>
+
+                <fieldset>
+                    <legend>Perfil en la plataforma</legend>
+
+                    <label for="rol">Rol en la plataforma</label>
+                    <select id="rol" name="rol" required>
+                        <option value="">-- Selecciona un rol --</option>
+                        <option value="estudiante">Estudiante</option>
+                        <option value="instructor">Instructor</option>
+                        <option value="empresa">Empresa / Reclutador</option>
+                    </select>
+
+                    <br>
+
+                    <label for="objetivo">Objetivo principal</label>
+                    <select id="objetivo" name="objetivo">
+                        <option value="empleo">Conseguir mi primer empleo en tecnologia</option>
+                        <option value="cambio">Cambiar de carrera al area tech</option>
+                        <option value="mejorar">Mejorar mis habilidades actuales</option>
+                        <option value="certificar">Obtener certificaciones reconocidas</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Habilidades tecnologicas</legend>
+
+                    <p>Tecnologias que conoces:</p>
+                    <label><input type="checkbox" name="habilidades" value="html"> HTML/CSS</label>
+                    <label><input type="checkbox" name="habilidades" value="js"> JavaScript</label>
+                    <label><input type="checkbox" name="habilidades" value="python"> Python</label>
+                    <label><input type="checkbox" name="habilidades" value="react"> React</label>
+                    <label><input type="checkbox" name="habilidades" value="nodejs"> Node.js</label>
+                    <label><input type="checkbox" name="habilidades" value="sql"> SQL</label>
+                    <label><input type="checkbox" name="habilidades" value="java"> Java</label>
+                    <label><input type="checkbox" name="habilidades" value="git"> Git</label>
+                    <label><input type="checkbox" name="habilidades" value="docker"> Docker</label>
+                    <label><input type="checkbox" name="habilidades" value="figma"> Figma</label>
+
+                    <br><br>
+
+                    <p>Nivel de experiencia:</p>
+                    <label><input type="radio" name="nivel" value="principiante"> Principiante</label>
+                    <label><input type="radio" name="nivel" value="junior" checked> Junior</label>
+                    <label><input type="radio" name="nivel" value="semi-senior"> Semi-senior</label>
+                    <label><input type="radio" name="nivel" value="senior"> Senior</label>
+                </fieldset>
+
+                <br>
+
+                <label>
+                    <input type="checkbox" name="terminos" required>
+                    Acepto los <a href="#">terminos y condiciones</a>
+                </label>
+
+                <br><br>
+
+                <a href="login.html">Volver</a>
+                <button type="submit">Crear cuenta</button>
+
+            </form>
+
+            <p>Ya tienes cuenta? <a href="login.html">Inicia sesion aqui</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 SkillMatch - Cerrando la brecha entre educacion y empleo</p>
+    </footer>
+
+</body>
+</html>
